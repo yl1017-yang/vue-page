@@ -7,12 +7,12 @@ Vue.use(VueRouter);
 
 const route = [ 
     {
-        path: "/",
+        path: "/vue-page/",
         name: "Home",
         component: Home,
     },
     {
-        path: "/about", 
+        path: "/vue-page/views/about", 
         name: "About",
         component: About
     }
