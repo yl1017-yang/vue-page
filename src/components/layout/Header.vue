@@ -1,10 +1,9 @@
 <template>
     <div>
-        상단네비바 테스트
+        <h2>logo</h2>
         
         <ul>
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/views/">main2</router-link></li>
           <li><router-link to="/views/about">about</router-link></li>
         </ul>
     </div>
