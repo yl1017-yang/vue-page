@@ -4,9 +4,20 @@
         왜 안뜨는걸까????
     </div>
 </template>
+
 <script>
+//import { swiper, swiperSlide } from 'vue-awesome-swiper'
+//import 'swiper/dist/css/swiper.min.css'
+
 export default {
     name: "Home",
-    components: {},
-};
+    components: {
+        //swiper,
+        //swiperSlide
+    },
+
+}
 </script>
+
+<style scoped>
+</style>

@@ -1,11 +1,14 @@
 <template>
     <div>
-        <h2>logo</h2>
-        
-        <ul>
-          <li><router-link to="/vue-page/">Home</router-link></li>
-          <li><router-link to="/vue-page/views/about">about</router-link></li>
-        </ul>
+      <header>
+        <h1>YANG</h1>
+        <nav>
+          <ul>
+            <li><router-link to="/vue-page/">HOME</router-link></li>
+            <li><router-link to="/vue-page/views/about">ABOUT</router-link></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 </template>
 <script>
@@ -14,13 +17,6 @@ export default {
 }
 </script>
 
-<style>
-.c-Button {
-  border: none;
-  border-radius: 2px;
-}
+<style scoped>
 
-.c-Button--close {
-  background-color: red;
-}
 </style>
