@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
-    //outputDir:'/docs',
+    outputDir:'./docs',
     publicPath:'/vue-page/',
 
     transpileDependencies: [

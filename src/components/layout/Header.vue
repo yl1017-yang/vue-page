@@ -1,7 +1,15 @@
 <template>
     <div>
+      <v-app-bar
+        app
+        color="primary"
+        dark
+      >
+      <h1>YANG</h1>
+
+      <v-spacer></v-spacer>
+
       <header>
-        <h1>YANG</h1>
         <nav>
           <ul>
             <li><router-link to="/vue-page/">HOME</router-link></li>
@@ -9,7 +17,9 @@
           </ul>
         </nav>
       </header>
+    </v-app-bar>
     </div>
+    
 </template>
 
 <script>
