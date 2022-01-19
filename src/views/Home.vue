@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <h1>새로운 메인</h1>
-        왜 안뜨는걸까????
-    </div>
+    <v-main>
+        <v-container>
+            Hello World
+        </v-container>
+    </v-main> 
 </template>
 
 <script>
