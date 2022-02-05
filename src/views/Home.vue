@@ -1,6 +1,7 @@
 <template>
     <v-main>
         <v-container>
+            <Nuxt />
             Hello World
         </v-container>
     </v-main> 

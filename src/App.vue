@@ -5,11 +5,11 @@
     <v-main>
       <router-view />
     </v-main>
+    
   </v-app>
 </template>
 <style>
-@import "./assets/common.css";
-@import "./assets/layout.css";
+
 </style>
 
 <script>

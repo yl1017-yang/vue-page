@@ -1,14 +1,9 @@
 <template>
-    
-  <v-app-bar
-    absolute
-    color="#444"
-    dark
-    flat
-    fixed
-    height="50"
-  >
-    <v-app-bar-title>YANG</v-app-bar-title>
+
+  <v-app-bar absolute color="#444" min-height="50" dark flat fixed dense class="d-flex justify-space-between align-space-between " >
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title><router-link to="/vue-page/">YANG</router-link></v-toolbar-title>
+    <v-spacer></v-spacer>
     <template v-slot:extension>
       <v-tabs align-with-title>
         <v-tab><router-link to="/vue-page/">HOME</router-link></v-tab>
@@ -17,7 +12,6 @@
     </template>
   </v-app-bar>
 
-    
 </template>
 
 <script>
