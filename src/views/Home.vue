@@ -1,27 +1,26 @@
 <template>
     <v-main>
+        <swiper class="swiper" :options="swiperOption" role="tablist">
+            <swiper-slide role="tab">I'm Slide 1</swiper-slide>
+            <swiper-slide role="tab">I'm Slide 2</swiper-slide>
+            <swiper-slide role="tab">
+                npm install swiper@4.4.1 vue-awesome-swiper@3 --save<br>
+                npm uninstall swiper vue-awesome-swiper --save
+                npm install swiper@5.3.7 vue-awesome-swiper --save<br>
+                npm install sass-loader@10<br>
+                npm install --save-dev sass-loader@7.1.0<br>
+                npm uninstall --save-dev sass-loader
+            </swiper-slide>
+            
+            <div class="swiper-pagination" slot="pagination"></div> 
+            <div class="swiper-button-prev" slot="button-prev"></div> 
+            <div class="swiper-button-next" slot="button-next"></div> 
+        </swiper>
+
         <v-container>
             <div>
-                샘플사이트
+                나머지 내용
             </div>
-
-            <swiper class="swiper" :options="swiperOption" role="tablist">
-                <swiper-slide role="tab">I'm Slide 1</swiper-slide>
-                <swiper-slide role="tab">I'm Slide 2</swiper-slide>
-                <swiper-slide role="tab">
-                    npm install swiper@4.4.1 vue-awesome-swiper@3 --save<br>
-                    npm uninstall swiper vue-awesome-swiper --save
-                    npm install swiper@5.3.7 vue-awesome-swiper --save<br>
-                    npm install sass-loader@10<br>
-                    npm install --save-dev sass-loader@7.1.0<br>
-                    npm uninstall --save-dev sass-loader
-                </swiper-slide>
-                
-                <div class="swiper-pagination" slot="pagination"></div> 
-                <div class="swiper-button-prev" slot="button-prev"></div> 
-                <div class="swiper-button-next" slot="button-next"></div> 
-            </swiper>
-
         </v-container>
     </v-main> 
 </template>
@@ -41,16 +40,23 @@ export default {
             swiperOption: { 
                 slidesPerView: 1, 
                 spaceBetween: 30, 
-                loop: true, 
+                centeredSlides: true,
+                //loop: true, 
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
                 pagination: { 
-                    el: '.swiper-pagination', clickable: true 
+                    el: '.swiper-pagination', 
+                    clickable: true 
                 }, 
                 navigation: { 
-                    nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' 
-                } 
+                    nextEl: '.swiper-button-next', 
+                    prevEl: '.swiper-button-prev',
+                },
             } 
         } 
-    }
+    },
 }
 </script>
 
