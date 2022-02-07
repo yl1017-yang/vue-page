@@ -30,7 +30,7 @@ import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 
 export default {
-    name: 'awesomeSwiper',
+    name: 'Home',
     components: {
         Swiper,
         SwiperSlide

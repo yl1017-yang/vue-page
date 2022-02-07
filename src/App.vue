@@ -5,7 +5,8 @@
     <v-main>
       <router-view />
     </v-main>
-    
+
+    <Footer />
   </v-app>
 </template>
 <style>
@@ -14,12 +15,14 @@
 
 <script>
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
 export default {
   name: 'App',
 
   components: {
     Header,
+    Footer,
   },
 
   methods: {

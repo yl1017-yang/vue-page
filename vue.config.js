@@ -2,6 +2,7 @@
 module.exports = {
     outputDir:'./docs',
     publicPath:'/vue-page/',
+    runtimeCompiler: true, //louter 작동하지 않을시
 
     transpileDependencies: [
       'vuetify'

@@ -7,11 +7,14 @@
       </h1>
     </v-card-title>
 
-    <v-tabs background-color="transparent" color="header_bg" fixed-tabs>
+    <v-tabs background-color="transparent" fixed-tabs>
       <v-tabs-slider></v-tabs-slider>
       <v-tab class="text-h6"><router-link to="/vue-page/">HOME</router-link></v-tab>
       <v-tab class="text-h6"><router-link to="/vue-page/views/about">ABOUT</router-link></v-tab>
     </v-tabs>
+
+
+  
   </v-card>
 
 </template>
