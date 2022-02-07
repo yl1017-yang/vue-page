@@ -1,8 +1,9 @@
 <template>
     <v-main>
         <v-container>
-            <Nuxt />
-            Hello World
+            
+
+
         </v-container>
     </v-main> 
 </template>
@@ -14,26 +15,21 @@
 export default {
     name: "Home",
     components: {
-        //Swiper,
-        //SwiperSlide
+        // Swiper,
+        // SwiperSlide,
     },
-    data() {
-        return {
-            swiperOption: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                }
-            }
-        }        
-    }
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+      };
+    },
 }
 </script>
 
