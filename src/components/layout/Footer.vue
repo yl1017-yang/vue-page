@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
   footer{
-    width:100%;height:80px;background:#f4f4f4;
+    width:100%;height:80px;background:#f4f4f4;margin-top:100px;
     display:flex;justify-content: center;align-content: center;flex-wrap: wrap;
   }
 </style>
