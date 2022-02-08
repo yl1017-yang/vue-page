@@ -12,35 +12,35 @@
 
         <v-container>
             <h3 class="banner_title">
-                YANG 내용
+                YANG 버킷리스트
             </h3>
 
-            <v-row no-gutters>
+            <v-row no-gutters class="banner">
                 <v-col>
                 <v-card
                     flat
                     color="#fffbed"
-                    class="banner"
                 >
-                    첫번째, 양하기
+                    첫번째, <span>행복하기</span>
+                    <v-icon>heart_broken</v-icon>
                 </v-card>
                 </v-col>
-                <v-col order="12">
+                <v-col>
                 <v-card
                     flat
                     color="#e7dae2"
-                    class="banner"
                 >
-                    두번째, 기부하기
+                    두번째, <span>미치기</span>
+                    <v-icon>sentiment_satisfied_alt</v-icon>
                 </v-card>
                 </v-col>
-                <v-col order="1">
+                <v-col>
                 <v-card
                     flat
                     color="#edebe4"
-                    class="banner"
                 >
-                    세번재, 선물하기
+                    세번째, <span>집중하기</span>
+                    <v-icon>forum</v-icon>
                 </v-card>
                 </v-col>
             </v-row>
@@ -63,17 +63,19 @@ export default {
         return { 
             swiperOption: { 
                 slidesPerView: 1, 
-                spaceBetween: 30, 
+                //spaceBetween: 30, 
                 centeredSlides: true,
                 speed: 800,
                 loop: true, 
                 autoplay: {
                     delay: 3000,
+                    stopOnLastSlide: false,
                     disableOnInteraction: false,
                 },
                 pagination: { 
                     el: '.swiper-pagination', 
-                    clickable: true 
+                    clickable: true,
+                    type: "bullets"
                 }, 
                 navigation: { 
                     nextEl: '.swiper-button-next', 
@@ -86,39 +88,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.swiper { 
-    height: 500px; 
-    width: 100%; 
-    .swiper-slide { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center; 
-        color:#fff;
-        font-weight: bold; 
-        font-size: 50px;
-    } 
-    .swiper_bg1 {
-        background: #f17ea5;
-    }
-    .swiper_bg2 {
-        background: #8890ff;
-    }
-    .swiper_bg3 {
-        background: #2fbd9c;
-    }
-}
-.banner_title {
-    font-size:30px;
-}
-.banner{ 
-    width:95%; 
-    height:180px;
-    padding:30px;
-    font-size:22px;
-    margin:15px 0 0;
-    
-    $card-border-radius:20px;
-}
+
 
 </style>

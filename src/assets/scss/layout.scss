@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+// main
+
+.swiper { 
+    height: 500px; 
+    width: 100%; 
+
+    .swiper-slide { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        color:#fff;
+        font-weight: bold; 
+        font-size: 4.5vw;
+    } 
+    .swiper_bg1 {
+        background: #f17ea5;
+    }
+    .swiper_bg2 {
+        background: #8890ff;
+    }
+    .swiper_bg3 {
+        background: #2fbd9c;
+    }
+
+    .swiper-pagination {
+        color: #fff;
+        bottom: 20px;
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.8;
+      height: 0.4vw;
+      border-radius: 2vw;
+      width: 2vw;
+      transition: all 0.3s; // can set slow change
+    }
+    .swiper-pagination-bullet-active {
+        width: 5vw;
+    }
+}
+.banner_title {
+    font-size:2.5vw;
+}
+.banner { 
+    .v-card {
+        width:95%;
+        height:180px;
+        padding:2.5vw;
+        font-size:1.5vw;
+        margin:1.5vw 0 0;
+        border-radius: 2vw;
+
+        span {
+            display: block;
+            font-size:2.4vw;
+            font-weight:bold;
+        }
+    }
+    .v-icon {
+        position: absolute;
+        font-size:5vw;
+        color:#aaa;
+        bottom:2.2vw;
+        right:2.2vw;
+    }
+}
