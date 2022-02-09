@@ -1,7 +1,4 @@
-@charset "utf-8";
-
 // main
-
 .swiper { 
     height: 500px; 
     width: 100%; 
@@ -13,7 +10,7 @@
         text-align: center; 
         color:#fff;
         font-weight: bold; 
-        font-size: 4.5vw;
+        font-size: 50px;
     } 
     .swiper_bg1 {
         background: #f17ea5;
@@ -42,28 +39,28 @@
     }
 }
 .banner_title {
-    font-size:2.5vw;
+    font-size:30px;
 }
 .banner { 
     .v-card {
         width:95%;
         height:180px;
-        padding:2.5vw;
-        font-size:1.5vw;
-        margin:1.5vw 0 0;
-        border-radius: 2vw;
+        padding:8%;
+        font-size:18px;
+        margin:5% 0 0;
+        border-radius: 10px;
 
         span {
             display: block;
-            font-size:2.4vw;
+            font-size:34px;
             font-weight:bold;
         }
     }
     .v-icon {
         position: absolute;
-        font-size:5vw;
+        font-size:80px;
         color:#aaa;
-        bottom:2.2vw;
-        right:2.2vw;
+        bottom:10%;
+        right:10%;
     }
 }
