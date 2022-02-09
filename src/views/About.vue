@@ -1,28 +1,42 @@
 <template>
     <v-main>
+
+        <v-img
+            max-height="300"
+            max-width="100%"
+            src="https://cdn.pixabay.com/photo/2021/10/22/00/59/restaurant-6730811_1280.jpg"
+        ></v-img>
+
         <v-container>
 
-            about
-            <v-img
-            lazy-src="https://picsum.photos/id/11/10/6"
-            max-height="250"
-            max-width="350"
-            src="https://picsum.photos/id/11/500/300"
-            ></v-img>
-
-            <v-btn
-                elevation="2"
-                rounded
-            >버튼 테스트
-            </v-btn>
-
-            <v-card
-            elevation="2"
-            shaped
+            <v-row>
+            <v-col
+                v-for="n in 9"
+                :key="n"
+                class="d-flex child-flex"
+                cols="4"
             >
-            생기다 만 카드 테스트 <br>
-            맘에안듬
-            </v-card>
+                <v-img
+                :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                aspect-ratio="1"
+                class="grey lighten-2"
+                >
+                <template v-slot:placeholder>
+                    <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                    >
+                    <v-progress-circular
+                        indeterminate
+                        color="grey lighten-5"
+                    ></v-progress-circular>
+                    </v-row>
+                </template>
+                </v-img>
+            </v-col>
+            </v-row>
 
         </v-container>
     </v-main> 
