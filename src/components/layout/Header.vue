@@ -2,18 +2,28 @@
 
   <v-card color="header_bg" flat>
     <v-card-title class="text-center justify-center py-6">
-      <h1 class="font-weight-bold text-h3 header_title">
-        <router-link to="/vue-page/">YANG</router-link>
-      </h1>
+      <router-link to="/vue-page/">
+        <h1 class="font-weight-bold text-h3 header_title">
+        YANG
+        </h1>
+      </router-link>
     </v-card-title>
 
-    <v-tabs background-color="transparent" fixed-tabs>
+    <v-tabs background-color="transparent" fixed-tabs class="nav">
       <v-tabs-slider></v-tabs-slider>
-      <v-tab class="text-h6"><router-link to="/vue-page/">HOME</router-link></v-tab>
-      <v-tab class="text-h6"><router-link to="/vue-page/views/about">ABOUT</router-link></v-tab>
+      <router-link to="/vue-page/">
+        <v-tab class="text-h6">HOME</v-tab>
+      </router-link>
+      <router-link to="/vue-page/views/about">
+        <v-tab class="text-h6">ABOUT</v-tab>
+      </router-link>
+      <router-link to="/vue-page/views/product">
+        <v-tab class="text-h6">PRODUCT</v-tab>
+      </router-link>
+      <router-link to="/vue-page/views/list">
+        <v-tab class="text-h6">NEWS</v-tab>
+      </router-link>
     </v-tabs>
-
-
   
   </v-card>
 

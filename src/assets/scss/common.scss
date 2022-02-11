@@ -70,8 +70,14 @@ em {
 .v-application a{
     color: #444 !important;
 }
-.v-tab:before, .v-tabs-slider{
+.nav.v-tab:before, .nav .v-tabs-slider{
     background-color: #444;
+}
+
+.nav {
+    a {
+        padding:0 20px;
+    }
 }
 
 .container { 

@@ -2,7 +2,7 @@
     <v-main>
         <swiper class="swiper" :options="swiperOption" role="tablist">
             <swiper-slide class="swiper_bg1" role="tab">새롭게 달라진 <br>YANG POINT</swiper-slide>
-            <swiper-slide class="swiper_bg2" role="tab">일상을 바꾸는 <br>즐거운 스와이프</swiper-slide>
+            <swiper-slide class="swiper_bg2" role="tab">일상을 바꾸는 <br>즐거운 하루</swiper-slide>
             <swiper-slide class="swiper_bg3" role="tab">npm install swiper@5.3.7 vue-awesome-swiper --save<br>npm install --save-dev sass-loader@7.1.0</swiper-slide>
             
             <div class="swiper-pagination" slot="pagination"></div> 
@@ -11,6 +11,7 @@
         </swiper>
 
         <v-container>
+            <!-- 배너 -->
             <h3 class="banner_title">
                 YANG 버킷리스트
             </h3>
@@ -44,6 +45,20 @@
                 </v-card>
                 </v-col>
             </v-row>
+            <!-- //배너 -->
+
+            <!-- 상품 -->
+            <section class="fb__main__section best-item__area">
+                <div class="section__inner">
+                    <h3 class="section__title">
+                        타이틀
+                    </h3>
+                    <div>
+                        상품카테고리
+                    </div>
+                </div>
+            </section>
+            <!-- //상품 -->
 
         </v-container>
     </v-main> 
@@ -87,7 +102,87 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
+        .best-item {
+            &__area {
+                width: 100%;
+                max-width: 1920px;
+                min-width: 1168px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 60px;
+                background: #eee;
+
+                .fb__category-tab {
+                    input {
+                        & + .fb__category-tab__btn {
+                            display: inline-block;
+                            text-align: center;
+                            vertical-align: middle;
+                            &::before {
+                                content: attr(data-text);
+                                display: block;
+                                font-weight: bold;
+                                height: 0;
+                                overflow: hidden;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+
+                .fb__product {
+                    &__list {
+                        padding-bottom: 60px;
+                        counter-reset: list-number;
+                    }
+
+                    &__item {
+                        position: relative;
+                        counter-increment: list-number;
+
+                        &:before {
+                            content: counter(list-number, decimal-leading-zero);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            width: 44px;
+                            height: 44px;
+                            padding-top: 19px;
+                            background: pink;
+                            border-radius: 8px 0 8px 0;
+                            font-family: Noto Sans KR;
+                            font-size: 14px;
+                            letter-spacing: -0.2px;
+                            line-height: 20px;
+                            color: #fff;
+                            text-align: center;
+                            box-sizing: border-box;
+                        }
+
+                        &:after {
+                            content: "BEST";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 44px;
+                            padding-top: 6px;
+                            z-index: 1;
+                            font-size: 12px;
+                            letter-spacing: -0.2px;
+                            line-height: 16px;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            &__nav {
+                margin-bottom: 20px;
+            }
+        }
 
 </style>
