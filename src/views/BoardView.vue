@@ -27,7 +27,7 @@
 import axios from 'axios'
 
 export default {
-    name: 'BoardView',  
+    name: 'boardView',  
     created() { 
         this.fetch() 
     },

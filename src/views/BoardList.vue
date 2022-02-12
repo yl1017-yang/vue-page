@@ -1,12 +1,20 @@
 <template>
     <v-main>
         <v-container>
-            <v-data-table :headers="headers" :items="desserts" :items-per-page="5" class="elevation-1" @click:row="rowClick" > 
+            <v-data-table 
+                :headers="headers" 
+                :items="desserts" 
+                :items-per-page="10" 
+                class="elevation-1" 
+                @click:row="rowClick" 
+            > 
             </v-data-table> 
             <v-row> 
-                <v-btn outlined color="blue" @click="writeClick" > 작성 </v-btn> 
+                <v-btn outlined color="black" @click="writeClick" > 작성 </v-btn> 
             </v-row>
-            <div>https://dollvin.tistory.com/61</div>
+
+            <div>참고 https://dollvin.tistory.com/61</div>
+            <div>LAPM( 리눅스 + 아파치 + PHP + MySql) 깃 설치 : https://dollvin.tistory.com/25?category=620148</div>
 
         </v-container>
     </v-main> 
@@ -16,7 +24,7 @@
 import axios from 'axios'
 
 export default {
-    name: 'BoardList',        
+    name: 'boardList',        
     created() { 
         this.fetch() 
     }, 
@@ -24,7 +32,7 @@ export default {
     methods: { 
         fetch() { 
             console.log('fetch list') 
-            axios.get('http://localhost:8080/api/board/list') 
+            axios.get('http://localhost:8000/api/board/list') 
             .then((response) => { 
                 console.log(response) 
             }) 
@@ -33,19 +41,19 @@ export default {
             }) 
         }, 
         writeClick() { 
-            this.$router.push('/writer') 
+            this.$router.push('/vue-page/views/writer') 
         }, 
         rowClick(item) { 
-            this.$router.push('/view/' + item.seq) 
-        },
+            this.$router.push('/vue-page/views/view/' + item.seq) 
+        }
     },
         
     data () { 
         return { 
             headers: [ 
-                { text: 'Number', align: 'left', sortable: false, value: 'number', }, 
-                { text: 'Title', value: 'title' }, 
-                { text: 'Reg Date', value: 'regDt' } 
+                { text: '순서', align: 'center', sortable: false, value: 'number', }, 
+                { text: '제목', align: 'center', value: 'title' }, 
+                { text: '날짜', align: 'center', value: 'regDt' } 
             ], 
             desserts: [],
         } 
