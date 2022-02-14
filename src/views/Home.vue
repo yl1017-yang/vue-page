@@ -51,7 +51,7 @@
             <section class="fb__main__section best-item__area">
                 <div class="section__inner">
                     <h3 class="section__title">
-                        타이틀
+                        https://vuetifyjs.com/
                     </h3>
                     <div>
                         상품카테고리

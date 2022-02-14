@@ -34,7 +34,7 @@ export default {
 
     methods: { 
         fetch() { 
-            axios.get('http://localhost:8080/api/board/' + this.$router.params.seq) 
+            axios.get('http://localhost:8000/api/board/' + this.$router.params.seq) 
             .then((response) => { 
                 console.log(response) 
             }) 
@@ -47,7 +47,7 @@ export default {
         }, 
         deleteClick() { 
             if(this.$data.seq) { 
-                axios.delete('http://localhost:8080/api/board/' + this.$data.seq) 
+                axios.delete('http://localhost:8000/api/board/' + this.$data.seq) 
                 .then((response) => { 
                     console.log(response) 
                     this.$router.push('/') 
