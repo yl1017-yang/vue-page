@@ -1,24 +1,49 @@
 <template>
     <v-main>
         <v-container>
-            <v-data-table 
-                :headers="headers" 
-                :items="desserts" 
-                :page.sync="page"
-                :items-per-page="itemsPerPage"
-                :search="search"
-                class="elevation-1" 
-                @click:row="rowClick" 
-            > 
-            </v-data-table>
+
+            <v-card flat>
+                <v-card-title>
+                    News
+                    <v-spacer></v-spacer>
+                    <v-text-field
+                        v-model="search"
+                        append-icon="mdi-magnify"
+                        label="Search"
+                        single-line
+                        hide-details
+                    ></v-text-field>
+                </v-card-title>
+
+                <v-data-table 
+                    :headers="headers" 
+                    :items="contents" 
+                    :page.sync="page"
+                    :items-per-page="itemsPerPage"
+                    :search="search"
+                    fixed-header
+                    class="boardType1"
+                    @click:row="rowClick" 
+                    @page-count="pageCount = $event"
+                > 
+                </v-data-table> 
+            </v-card>           
+
             <div class="text-center pt-2">
                 <v-pagination
-                v-model="page"
-                :length="pageCount"
-                :total-visible="totalVisible"
-                next-icon="mdi-menu-right"
-                prev-icon="mdi-menu-left"></v-pagination>
+                    v-model="page"
+                    :length="pageCount"
+                    ></v-pagination>
+                    <v-text-field
+                    :value="itemsPerPage"
+                    label="Items per page"
+                    type="number"
+                    min="-1"
+                    max="15"
+                    @input="itemsPerPage = parseInt($event, 10)"
+                ></v-text-field>
             </div>
+    
             <v-row> 
                 <v-btn Depressed color="#eee" @click="writeClick" > 작성 </v-btn> 
             </v-row>
@@ -72,7 +97,11 @@ export default {
                 { text: '제목', align: 'center', value: 'title' }, 
                 { text: '날짜', align: 'center', value: 'regDt' } 
             ], 
-            desserts: [],
+            contents: [
+                { number: 1, title: 'ABC', regDt: '2022-02-14' },
+                { number: 2, title: 'DEF', regDt: '2022-02-14' },
+                { number: 3, title: 'GHI', regDt: '2022-02-14' },
+            ],
         } 
     } 
 };
