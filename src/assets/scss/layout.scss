@@ -9,8 +9,12 @@
         align-items: center; 
         text-align: center; 
         color:#fff;
-        font-weight: bold; 
+        font-weight: 700; 
         font-size: 50px;
+        .subtxt {
+            display: block !important;
+            font-weight: 100;
+        }
     } 
     .swiper_bg1 {
         background: #f17ea5;
@@ -52,13 +56,13 @@
 
         span {
             display: block;
-            font-size:34px;
+            font-size:30px;
             font-weight:bold;
         }
     }
     .v-icon {
         position: absolute;
-        font-size: 80px;
+        font-size: 50px;
         color:#aaa;
         bottom: 10%;
         right: 8%;
@@ -90,6 +94,7 @@
                 img {
                     display: block;
                     max-width: 100%;
+                    min-height: 200px;
                 }
                 img:after {
                     content: "";

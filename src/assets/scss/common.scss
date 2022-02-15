@@ -90,12 +90,10 @@ em {
     $font-size-root: 16px; 
     padding-top: 50px;
 
-    .nested-test1 { // nested 사용 
-//        font-size: $font-size-root; // 변수 사용 
-        .nested-test2 { // nested 사용 
-//            font-size: $font-size-root; // 변수 사용 
-        } 
-    } 
+    .layout {
+        width: 1100px;
+        margin: 50px auto 0;
+    }
 } 
 .row { 
 //    color: $color-main; // 변수 사용 

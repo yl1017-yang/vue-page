@@ -1,7 +1,12 @@
 <template>
-    <v-main>
-        <v-container>
+    <v-container fluid pa-0>
+        <v-img
+            max-height="120"
+            max-width="100%"
+            src="https://cdn.pixabay.com/photo/2021/12/23/03/58/da-guojing-6888603_1280.jpg"
+        ></v-img>
 
+        <v-layout column wrap>
             <v-card flat>
                 <v-card-title>
                     News
@@ -40,7 +45,7 @@
                     next-icon="mdi-menu-right"
                 ></v-pagination>
             </div>
-    
+
             <v-row no-gutters> 
                 <v-btn tile depressed color="#eee" @click="writeClick" > 작성 </v-btn> 
             </v-row>
@@ -52,9 +57,10 @@
                 LAPM( 리눅스 + 아파치 + PHP + MySql) 깃 설치 : https://dollvin.tistory.com/25?category=620148<br>
                 https://v15.vuetifyjs.com/ko/
             </div>
+        </v-layout>
 
-        </v-container>
-    </v-main> 
+    </v-container>
+    
 </template>
 
 <script>

@@ -1,16 +1,22 @@
 <template>
-    <v-main>
+    <v-container fluid pa-0>
         <swiper class="swiper" :options="swiperOption" role="tablist">
-            <swiper-slide class="swiper_bg1" role="tab">새롭게 달라진 <br>YANG POINT</swiper-slide>
-            <swiper-slide class="swiper_bg2" role="tab">일상을 바꾸는 <br>즐거운 하루</swiper-slide>
-            <swiper-slide class="swiper_bg3" role="tab">npm install swiper@5.3.7 vue-awesome-swiper --save<br>npm install --save-dev sass-loader@7.1.0</swiper-slide>
+            <swiper-slide class="swiper_bg1" role="tab">
+                새롭게 달라진 <span class="subtxt">YANG POINT</span>
+            </swiper-slide>
+            <swiper-slide class="swiper_bg2" role="tab">
+                일상을 바꾸는 <span class="subtxt">즐거운 하루</span>
+            </swiper-slide>
+            <swiper-slide class="swiper_bg3" role="tab">
+                언제 끝내냐? <span class="subtxt">퓨~</span>
+            </swiper-slide>
             
             <div class="swiper-pagination" slot="pagination"></div> 
             <div class="swiper-button-prev" slot="button-prev"></div> 
             <div class="swiper-button-next" slot="button-next"></div> 
         </swiper>
 
-        <v-container>
+        <v-layout column wrap>
             <!-- 배너 -->
             <h3 class="banner_title">
                 YANG 버킷리스트
@@ -50,12 +56,12 @@
             <!-- 상품 -->
             <section class="shop_section">
                 <h3 class="shop_title">
-                    YANG 상품리스트
+                    상품리스트
                 </h3>
                 <ul class="shop_list">
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/03/320_C1DFAF22585E48A985CA.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2022/02/11/14/52/waffles-7007465_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
@@ -68,11 +74,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2022/02/12/320_CC8CF8AD1FC749EAB465.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2016/10/31/18/14/dessert-1786311_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 슈가 두부도너츠 (45g) 
+                                    슈가 두부도너츠 (45g) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -81,11 +87,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2020/12/15/320_1A7FE1DB7B1E40D09BB4.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2016/10/27/22/52/apples-1776744_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 한끼연두부 오리엔탈유자 (118gx2EA) 
+                                    한끼연두부 오리엔탈유자 (118gx2EA) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -94,11 +100,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 식물성 유니짜장면 2인분 (620g) 
+                                    식물성 유니짜장면 2인분 (620g) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -107,11 +113,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2020/12/15/320_1A7FE1DB7B1E40D09BB4.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 자연은 맛있다 백면 (101.5gx4봉) 
+                                    자연은 맛있다 백면 (101.5gx4봉) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -120,11 +126,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 나폴리식 미트라구 파스타 (2인분) (600g) 
+                                    나폴리식 미트라구 파스타 (2인분) (600g) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -133,11 +139,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 식물성 유니짜장면 2인분 (620g) 
+                                    식물성 유니짜장면 2인분 (620g) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -146,11 +152,11 @@
                     </li>
                     <li>
                         <figure class="thumb_img">
-                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2022/02/12/320_CC8CF8AD1FC749EAB465.jpg" alt="상품 이미지">
+                            <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg" alt="상품 이미지">
                         </figure>
                         <p class="info_title">
                             <span class="info_title_name">
-                                 슈가 두부도너츠 (45g) 
+                                    슈가 두부도너츠 (45g) 
                             </span>
                             <span class="info_price_cost">
                                 판매가 3,800원
@@ -160,9 +166,10 @@
                 </ul>
             </section>
             <!-- //상품 -->
+        </v-layout>
 
-        </v-container>
-    </v-main> 
+    </v-container>
+
 </template>
 
 <script>
@@ -279,10 +286,6 @@ export default {
                         }
                     }
                 }
-            }
-
-            &__nav {
-                margin-bottom: 20px;
             }
         }
 

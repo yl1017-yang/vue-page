@@ -1,8 +1,13 @@
 <template>
-    <v-main>
-        <v-form> 
-            <v-container>
+    <v-container fluid pa-0>
+        <v-img
+            max-height="120"
+            max-width="100%"
+            src="https://cdn.pixabay.com/photo/2021/12/23/03/58/da-guojing-6888603_1280.jpg"
+        ></v-img>
 
+        <v-layout column wrap>
+            <v-form> 
                 <v-row outline no-gutters> 
                     {{ title }} 
                 </v-row> 
@@ -14,10 +19,12 @@
                 <v-row no-gutters> 
                     <v-btn block tile depressed color="#eee" @click="listClick"> 목록 </v-btn> 
                 </v-row> 
-            </v-container> 
-        </v-form>
+            </v-form>
+        </v-layout>
 
-    </v-main> 
+    </v-container> 
+
+    
 </template>
 
 <script>

@@ -1,7 +1,13 @@
-<template>
-    <v-main>
-        <v-form> 
-            <v-container> 
+<template>    
+    <v-container fluid pa-0>
+        <v-img
+            max-height="120"
+            max-width="100%"
+            src="https://cdn.pixabay.com/photo/2021/12/23/03/58/da-guojing-6888603_1280.jpg"
+        ></v-img>
+
+        <v-layout column wrap>
+            <v-form> 
                 <v-row> 
                     제목 
                 </v-row> 
@@ -17,9 +23,11 @@
                 <v-row> 
                     <v-btn tile depressed color="#eee" @click="writeClick"> 등록 </v-btn> 
                 </v-row> 
-            </v-container> 
-        </v-form>
-    </v-main> 
+            </v-form>
+        </v-layout>
+    </v-container> 
+    
+    
 </template>
 
 <script>
