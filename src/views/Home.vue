@@ -48,15 +48,116 @@
             <!-- //배너 -->
 
             <!-- 상품 -->
-            <section class="fb__main__section best-item__area">
-                <div class="section__inner">
-                    <h3 class="section__title">
-                        https://vuetifyjs.com/
-                    </h3>
-                    <div>
-                        상품카테고리
-                    </div>
-                </div>
+            <section class="shop_section">
+                <h3 class="shop_title">
+                    YANG 상품리스트
+                </h3>
+                <ul class="shop_list">
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/03/320_C1DFAF22585E48A985CA.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                행복한 닭이 낳은 동물복지 유정란 (10입) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2022/02/12/320_CC8CF8AD1FC749EAB465.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 슈가 두부도너츠 (45g) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2020/12/15/320_1A7FE1DB7B1E40D09BB4.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 한끼연두부 오리엔탈유자 (118gx2EA) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 식물성 유니짜장면 2인분 (620g) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2020/12/15/320_1A7FE1DB7B1E40D09BB4.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 자연은 맛있다 백면 (101.5gx4봉) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 나폴리식 미트라구 파스타 (2인분) (600g) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2021/06/07/320_5FAB0C8818764C55987A.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 식물성 유니짜장면 2인분 (620g) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <figure class="thumb_img">
+                            <img src="https://shoppulmuone.cdn.ntruss.com/BOS/il/2022/02/12/320_CC8CF8AD1FC749EAB465.jpg" alt="상품 이미지">
+                        </figure>
+                        <p class="info_title">
+                            <span class="info_title_name">
+                                 슈가 두부도너츠 (45g) 
+                            </span>
+                            <span class="info_price_cost">
+                                판매가 3,800원
+                            </span>
+                        </p>
+                    </li>
+                </ul>
             </section>
             <!-- //상품 -->
 

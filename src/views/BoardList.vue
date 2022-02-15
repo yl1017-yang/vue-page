@@ -21,10 +21,11 @@
                     :page.sync="page"
                     :items-per-page="itemsPerPage"
                     :search="search"
+                    hide-default-footer
                     fixed-header
-                    class="boardType1"
                     @click:row="rowClick" 
                     @page-count="pageCount = $event"
+                    class="boardType1"
                 > 
                 </v-data-table> 
             </v-card>           
@@ -45,10 +46,12 @@
             </v-row>
 
             
-            <div>참고 https://dollvin.tistory.com/61</div>
-            <div>https://fyzh99.tistory.com/44</div>
-            <div>LAPM( 리눅스 + 아파치 + PHP + MySql) 깃 설치 : https://dollvin.tistory.com/25?category=620148</div>
-            <div>https://v15.vuetifyjs.com/ko/</div>
+            <div class="blind">
+                참고 https://dollvin.tistory.com/61 <br>
+                https://fyzh99.tistory.com/44<br>
+                LAPM( 리눅스 + 아파치 + PHP + MySql) 깃 설치 : https://dollvin.tistory.com/25?category=620148<br>
+                https://v15.vuetifyjs.com/ko/
+            </div>
 
         </v-container>
     </v-main> 

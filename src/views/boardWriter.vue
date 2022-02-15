@@ -12,10 +12,10 @@
                     내용 
                 </v-row> 
                 <v-row> 
-                    <v-textarea name="context" outline label="내용을 입력해주세요." v-model="context" :counter="1000" maxlength="1000" ></v-textarea> 
+                    <v-textarea name="context" label="내용을 입력해주세요." v-model="context" :counter="1000" outline maxlength="1000" ></v-textarea> 
                 </v-row> 
                 <v-row> 
-                    <v-btn block Depressed color="#eee" @click="writeClick"> 등록 </v-btn> 
+                    <v-btn tile depressed color="#eee" @click="writeClick"> 등록 </v-btn> 
                 </v-row> 
             </v-container> 
         </v-form>
@@ -64,7 +64,7 @@ export default {
         
     data () { 
         return { 
-            title : '', 
+            title : '그럴수 있따...', 
             context: '', 
             uptDt: '', 
             regDt: '' 

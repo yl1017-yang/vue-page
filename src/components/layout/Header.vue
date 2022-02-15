@@ -3,8 +3,8 @@
   <v-card color="header_bg" flat>
     <v-card-title class="text-center justify-center py-6">
       <router-link to="/vue-page/">
-        <h1 class="font-weight-bold text-h3 header_title">
-        YANG
+        <h1 class="font-weight-bold header_title">
+          YANG
         </h1>
       </router-link>
     </v-card-title>
@@ -12,16 +12,16 @@
     <v-tabs background-color="transparent" fixed-tabs class="nav">
       <v-tabs-slider></v-tabs-slider>
       <router-link to="/vue-page/">
-        <v-tab class="text-h6">HOME</v-tab>
+        <v-tab>HOME</v-tab>
       </router-link>
       <router-link to="/vue-page/views/about">
-        <v-tab class="text-h6">ABOUT</v-tab>
+        <v-tab>ABOUT</v-tab>
       </router-link>
       <router-link to="/vue-page/views/product">
-        <v-tab class="text-h6">PRODUCT</v-tab>
+        <v-tab>PRODUCT</v-tab>
       </router-link>
       <router-link to="/vue-page/views/list">
-        <v-tab class="text-h6">NEWS</v-tab>
+        <v-tab>NEWS</v-tab>
       </router-link>
     </v-tabs>
   
