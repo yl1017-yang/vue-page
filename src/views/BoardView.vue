@@ -14,7 +14,8 @@
                 <v-row> 
                     {{ context }} 
                 </v-row> 
-                <v-row> 
+                
+                 <v-row no-gutters> 
                     <v-btn block outlined color="blue" @click="listClick"> 목록 </v-btn> 
                 </v-row> 
             </v-container> 
@@ -43,14 +44,14 @@ export default {
             }) 
         }, 
         listClick() { 
-            this.$router.push('/') 
+            this.$router.push('/vue-page/views/list') 
         }, 
         deleteClick() { 
             if(this.$data.seq) { 
                 axios.delete('http://localhost:8000/api/board/' + this.$data.seq) 
                 .then((response) => { 
                     console.log(response) 
-                    this.$router.push('/') 
+                    this.$router.push('/vue-page/views/list') 
                 }) 
                 .catch((error) => { 
                     console.log(error) 
