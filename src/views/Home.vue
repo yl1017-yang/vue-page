@@ -1,13 +1,13 @@
 <template>
     <v-container fluid pa-0>
-        <swiper class="swiper" :options="swiperOption" role="tablist">
-            <swiper-slide class="swiper_bg1" role="tab">
+        <swiper class="swiper" :options="swiperOption">
+            <swiper-slide class="swiper_bg1">
                 새롭게 달라진 <span class="subtxt">YANG POINT</span>
             </swiper-slide>
-            <swiper-slide class="swiper_bg2" role="tab">
+            <swiper-slide class="swiper_bg2">
                 일상을 바꾸는 <span class="subtxt">즐거운 하루</span>
             </swiper-slide>
-            <swiper-slide class="swiper_bg3" role="tab">
+            <swiper-slide class="swiper_bg3">
                 언제 끝내냐? <span class="subtxt">퓨~</span>
             </swiper-slide>
             
@@ -52,6 +52,35 @@
                 </v-col>
             </v-row>
             <!-- //배너 -->
+
+            <!-- 매거진 -->
+            <h3 class="banner_title">
+                YANG 매거진
+            </h3>
+            <swiper class="swiper_magezine" :options="swiperOption_megezine" >
+                <swiper-slide>
+                    <p class="tit">오늘 하루는 고생 많았어<br>이제는 쉬자</p>
+                    <figure class="thumbnail">
+                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000581861.nhd" alt="">
+                    </figure>
+                </swiper-slide>
+                <swiper-slide>
+                    <p class="tit">다시 꿈꾸고 싶다 <br>진짜?</p>
+                    <figure class="thumbnail">
+                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000532143.nhd" alt="">
+                    </figure>
+                </swiper-slide>
+                <swiper-slide>
+                    <p class="tit">여전히 서툴고 좀 부족해 보여도<br>언제까지나 내곁에 있을께</p>
+                    <figure class="thumbnail">
+                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000516282.nhd" alt="">
+                    </figure>
+                </swiper-slide>
+                
+                <div class="swiper-button-prev magezine_prev" slot="button-prev"></div> 
+                <div class="swiper-button-next magezine_next" slot="button-next"></div> 
+            </swiper>
+            <!-- //매거진 -->
 
             <!-- 상품 -->
             <section class="shop_section">
@@ -204,8 +233,31 @@ export default {
                     nextEl: '.swiper-button-next', 
                     prevEl: '.swiper-button-prev',
                 },
+            },
+            swiperOption_megezine: { 
+                effect: 'fade',
+                speed: 800,
+                loop: true, 
+                autoplay: {
+                    delay: 5000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+                },
+                pagination: { 
+                    el: '.swiper-pagination', 
+                    clickable: true,
+                }, 
+                navigation: { 
+                    nextEl: '.swiper-button-next', 
+                    prevEl: '.swiper-button-prev',
+                },
             } 
         } 
+    },
+    computed: {
+        swiper() {
+            return this.$refs.mySwiper.$swiper;
+        }
     },
 }
 </script>

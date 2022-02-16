@@ -85,6 +85,7 @@ em {
     }
 }
 
+//container 
 .container { 
     width: 100%; 
     $font-size-root: 16px; 
@@ -95,6 +96,4 @@ em {
         margin: 50px auto 0;
     }
 } 
-.row { 
-//    color: $color-main; // 변수 사용 
-}
+
