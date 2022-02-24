@@ -234,12 +234,20 @@ export default {
                     prevEl: '.swiper-button-prev',
                 },
             },
+
             swiperOption_megezine: { 
-                effect: 'fade',
+                effect: "fade",
+                fadeEffect: { 
+                    crossFade: true //fade effect 사용시 쌓이는 느낌 삭제
+                },
+                observer: true, //swiper js display:none 상태에서 작동하지 않을 때 옵션 초기화
+                observeParents: true,
+                slidesPerView: 1,
                 speed: 800,
                 loop: true, 
+                grabCursor: true,
                 autoplay: {
-                    delay: 5000,
+                    delay: 3000,
                     stopOnLastSlide: false,
                     disableOnInteraction: false,
                 },
@@ -251,6 +259,25 @@ export default {
                     nextEl: '.swiper-button-next', 
                     prevEl: '.swiper-button-prev',
                 },
+
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    }
+                }
             } 
         } 
     },
