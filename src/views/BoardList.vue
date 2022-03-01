@@ -22,7 +22,7 @@
 
                 <v-data-table 
                     :headers="headers" 
-                    :items="contents" 
+                    :items="contents"
                     :page.sync="page"
                     :items-per-page="itemsPerPage"
                     :search="search"
@@ -47,9 +47,8 @@
             </div>
 
             <v-row no-gutters> 
-                <v-btn tile depressed color="#eee" @click="writeClick" > 작성 </v-btn> 
+                <v-btn tile depressed color="#eee" @click="writeClick" > 글작성 </v-btn> 
             </v-row>
-
             
             <div class="blind">
                 참고 https://dollvin.tistory.com/61 <br>
@@ -64,7 +63,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+//import axios from 'axios'
 
 export default {
     name: 'boardList',        
@@ -75,13 +74,18 @@ export default {
     methods: { 
         fetch() { 
             console.log('fetch list') 
-            axios.get('http://localhost:8000/api/board/list') 
-            .then((response) => { 
-                console.log(response) 
-            }) 
+            this.$axios.get('http://localhost:3000/arr')
+            .then((res) => { 
+                //console.log(res);
+                console.log('arr:', res.data)
+                this.exampleItems = res.data
+            })
             .catch((error) => { 
                 console.log(error) 
             }) 
+            .finally(() => { 
+                console.log("항상 마지막에 실행"); 
+            });
         }, 
         writeClick() { 
             this.$router.push('/vue-page/views/writer') 
@@ -90,8 +94,12 @@ export default {
             this.$router.push('/vue-page/views/view/' + item.seq) 
         }
     },
+
+    mounted() {
+        this.fetch() //db.json 사용
+    },
         
-    data () { 
+    data() { 
         return { 
             text: 'Welcome to AyoteraLab',
             page: 1,
@@ -106,9 +114,11 @@ export default {
                 { text: '날짜', align: 'center', value: 'regDt' } 
             ], 
             contents: [
-                { number: 1, title: '공지사항입니다.', regDt: '2022-02-14' },
-                { number: 2, title: '그래 그럴수 있어~', regDt: '2022-02-14' },
-                { number: 3, title: '꼭 해야 하는 걸까?', regDt: '2022-02-30' },
+                // { number: 11, title: '공지사항입니다.', regDt: '2022-02-14' },
+                // { number: 22, title: '그래 그럴수 있어~', regDt: '2022-02-14' },
+                // { number: 33, title: '꼭 해야 하는 걸까?', regDt: '2022-02-30' },
+                // { number: 44, title: '뷰가 뭐길래', regDt: '2022-04-30' },
+                // { number: 55, title: '뭐긴 뭐야 트렌드지', regDt: '2022-04-30' },
             ],
         } 
     } 

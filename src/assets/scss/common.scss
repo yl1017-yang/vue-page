@@ -1,23 +1,23 @@
 // common.scss 
 
 // reset
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,input,textarea,select,button{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;box-sizing:border-box;}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,input,textarea,select,button{margin:0;padding:0;border:0;vertical-align:baseline;box-sizing:border-box;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{
-    font-family: $defaultFont;
+    font-family: $fontFamily;
     font-size: $font-size-root;
     font-weight: 400;
-    color: #222;
+    color: $gray-68;
     line-height: 1.3;
     letter-spacing: -0.0375em;
-    word-wrap: break-word;
-    word-break: break-all;
+    word-break: keep-all;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
 #app {
-    font-family: $defaultFont;
+    font-family: $fontFamily;
+    font-weight: 400;
 }
 
 // basic tags selector
@@ -29,8 +29,8 @@ blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
 ol,ul,li{list-style:none}
 table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}
 fieldset, legend{background-color:transparent;}
-caption, legend, .blind{position:absolute!important;height:1px!important;width:1px!important;overflow:hidden!important;clip:rect(1px 1px 1px 1px)!important;clip:rect(1px,1px,1px,1px)!important}
-a{color:inherit;text-decoration:none;cursor:pointer}
+caption, legend, .blind{position:absolute!important;height:1px!important;width:1px!important;overflow:hidden!important;clip:rect(1px 1px 1px 1px)!important;clip:rect(1px,1px,1px,1px)!important;}
+a{color:$gray-68 !important;text-decoration:none;cursor:pointer;}
 
 button,
 [role="button"] {
@@ -62,11 +62,11 @@ em {
 
 //header 
 .header_bg {
-    background-color: #fff !important;
+    background-color: $white !important;
 }
 .header_title{
     font-size:45px;
-    color: #222 !important;
+    color: $gray-80 !important;
     padding:20px 0;
 }
 .nav.v-tab:before, .nav .v-tabs-slider{
@@ -76,7 +76,7 @@ em {
 .nav {
     a {
         padding:0 20px;
-        color: #222 !important;
+        color: $gray-80 !important;
     }
     .v-tab {
         font-size:18px;
@@ -92,7 +92,7 @@ em {
     padding-top: 50px;
 
     .layout {
-        width: 1100px;
+        width: $width;
         margin: 50px auto 0;
     }
 } 

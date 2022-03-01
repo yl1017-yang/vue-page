@@ -39,9 +39,9 @@ export default {
     methods: { 
         writeClick() { 
             if(this.$route.params.seq) { 
-                axios.put('http://localhost:8080/api/board', this.$data) 
-                .then((response) => { 
-                    console.log(response) 
+                axios.put('http://localhost:8080/vue-page/board', this.$data) 
+                .then((res) => { 
+                    console.log(res) 
                     this.$router.push('/vue-page/views/list') 
                 }) 
                 .catch((error) => { 
@@ -50,9 +50,9 @@ export default {
             } else { 
                 this.$data.regDt = this.getNowDate() 
                 this.$data.uptDt = this.getNowDate() 
-                axios.post('http://localhost:8080/api/board', this.$data) 
-                .then((response) => { 
-                    console.log(response) 
+                axios.post('http://localhost:8080/vue-page/board', this.$data) 
+                .then((res) => { 
+                    console.log(res) 
                     this.$router.push('/vue-page/views/list') 
                 }) 
                 .catch((error) => { 

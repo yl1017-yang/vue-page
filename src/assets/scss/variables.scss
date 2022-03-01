@@ -43,9 +43,9 @@ $gray-2: #fafafa;
 $primary: #80C342;
 $primary-hover: #75b33c;
 $primary-pressed : rgba(0,0,0,.08);
+$primary-basic: #444;
 $primary-blur: #80c342;
 $primary-dark: #7fc241;
-$primary-light: #f4fce2;
 $secondary-dark: #004f18;
 $secondary-pure: #009333;
 $secondary-ligh: #f5f8f6;
@@ -60,7 +60,7 @@ $gradient-end: #74c346;
 // #endregion
 
 // #region font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 $defaultFont : 'Montserrat', 'Noto Sans KR', '맑은 고딕', 'malgun gothic','Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
 $notoFamily: 'Noto Sans KR', $defaultFont;

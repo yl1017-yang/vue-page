@@ -38,9 +38,9 @@ export default {
 
     methods: { 
         fetch() { 
-            axios.get('http://localhost:8000/api/board/' + this.$router.params.seq) 
-            .then((response) => { 
-                console.log(response) 
+            axios.get('http://localhost:8080/vue-page/board/' + this.$router.params.seq) 
+            .then((res) => { 
+                console.log(res) 
             }) 
             .catch((error) => { 
                 console.log(error) 
@@ -51,9 +51,9 @@ export default {
         }, 
         deleteClick() { 
             if(this.$data.seq) { 
-                axios.delete('http://localhost:8000/api/board/' + this.$data.seq) 
-                .then((response) => { 
-                    console.log(response) 
+                axios.delete('http://localhost:8080/vue-page/board/' + this.$data.seq) 
+                .then((res) => { 
+                    console.log(res) 
                     this.$router.push('/vue-page/views/list') 
                 }) 
                 .catch((error) => { 

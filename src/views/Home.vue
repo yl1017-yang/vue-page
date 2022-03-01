@@ -61,19 +61,19 @@
                 <swiper-slide>
                     <p class="tit">오늘 하루는 고생 많았어<br>이제는 쉬자</p>
                     <figure class="thumbnail">
-                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000581861.nhd" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_960_720.jpg" alt="">
                     </figure>
                 </swiper-slide>
                 <swiper-slide>
                     <p class="tit">다시 꿈꾸고 싶다 <br>진짜?</p>
                     <figure class="thumbnail">
-                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000532143.nhd" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/02/15/59/olive-oil-968657_960_720.jpg" alt="">
                     </figure>
                 </swiper-slide>
                 <swiper-slide>
                     <p class="tit">여전히 서툴고 좀 부족해 보여도<br>언제까지나 내곁에 있을께</p>
                     <figure class="thumbnail">
-                        <img src="https://www.h-point.co.kr:443/cma/imgAtfl/1000516282.nhd" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2016/07/22/09/59/fruits-1534494_960_720.jpg" alt="">
                     </figure>
                 </swiper-slide>
                 
@@ -89,108 +89,124 @@
                 </h3>
                 <ul class="shop_list">
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2022/02/11/14/52/waffles-7007465_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                행복한 닭이 낳은 동물복지 유정란 (10입) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2022/02/11/14/52/waffles-7007465_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                    행복한 닭이 낳은 동물복지 유정란 (10입) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2016/10/31/18/14/dessert-1786311_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    슈가 두부도너츠 (45g) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2016/10/31/18/14/dessert-1786311_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        슈가 두부도너츠 (45g) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2016/10/27/22/52/apples-1776744_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    한끼연두부 오리엔탈유자 (118gx2EA) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        한끼연두부 오리엔탈유자 (118gx2EA) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    식물성 유니짜장면 2인분 (620g) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        식물성 유니짜장면 2인분 (620g) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    자연은 맛있다 백면 (101.5gx4봉) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        자연은 맛있다 백면 (101.5gx4봉) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    나폴리식 미트라구 파스타 (2인분) (600g) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        나폴리식 미트라구 파스타 (2인분) (600g) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    식물성 유니짜장면 2인분 (620g) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        식물성 유니짜장면 2인분 (620g) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                     <li>
-                        <figure class="thumb_img">
-                            <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg" alt="상품 이미지">
-                        </figure>
-                        <p class="info_title">
-                            <span class="info_title_name">
-                                    슈가 두부도너츠 (45g) 
-                            </span>
-                            <span class="info_price_cost">
-                                판매가 3,800원
-                            </span>
-                        </p>
+                        <a href="#">
+                            <figure class="thumb_img">
+                                <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg" alt="상품 이미지">
+                            </figure>
+                            <p class="info_title">
+                                <span class="info_title_name">
+                                        슈가 두부도너츠 (45g) 
+                                </span>
+                                <span class="info_price_cost">
+                                    판매가 3,800원
+                                </span>
+                            </p>
+                        </a>
                     </li>
                 </ul>
             </section>
