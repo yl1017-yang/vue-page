@@ -63,7 +63,7 @@
 </template>
 
 <script>
-//import axios from 'axios'
+import axios from 'axios'
 
 export default {
     name: 'boardList',        
@@ -74,7 +74,7 @@ export default {
     methods: { 
         fetch() { 
             console.log('fetch list') 
-            this.$axios.get('http://localhost:3000/arr')
+            axios.get('http://localhost:3000/arr')
             .then((res) => { 
                 //console.log(res);
                 console.log('arr:', res.data)
